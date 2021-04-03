@@ -18,7 +18,7 @@ html {
       rgba(0, 0, 0, 0.22),
       rgba(0, 0, 0, 0.22)
     ),
-    url('/etaoshub/resources/images/stevenuniverse_bg.jpg');
+    url('/resources/images/stevenuniverse_bg.jpg');
   background-position: 50%, 50%;
   background-size: auto, cover;
 }
@@ -40,8 +40,6 @@ html {
   position: relative;
   top: 5rem;
   display: block;
-  margin-right: 30vh;
-  margin-left: 30vh;
   margin-bottom: 5%;
   text-align: center;
 }
@@ -67,6 +65,42 @@ html {
 .alice_text {
   color: aliceblue;
   font-family: 'Karla', sans-serif;
+}
+
+#article_heading {
+  margin-bottom: 3rem;
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#article_text {
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#article_link {
+  margin-top: 4rem;
+  width: 6rem;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  -webkit-transition: all 0.3s ease;
+}
+
+#article_link:hover {
+  width: 6rem;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  font-size: 1.8rem;
 }
 
 .title_button {
@@ -140,14 +174,95 @@ html {
   max-width: 10rem;
   display: flex;
   align-items: center;
+  filter: drop-shadow(0 0 5px #222);
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: rotate(10deg);
 }
 
 .bottom_strip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: 5rem;
-  border: 1px solid red;
-  height: 50vh;
+  height: 40vh;
   min-width: 10vh;
   display: flex;
-  justify-content: center;
   text-align: center;
+  align-items: center;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-height: 5vh;
+  background-image: linear-gradient(180deg, #ffffff 0%, #ffe3c2 100%);
+  border-top-left-radius: 80% 20%;
+  border-top-right-radius: 80% 20%;
+}
+
+.footer_container {
+  margin-top: 2%;
+  width: 100vh;
+  min-height: 5vh;
+}
+
+.slogan {
+  width: 30vh;
+  margin-top: -10vh;
+
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.copyright {
+  margin-top: 13%;
+  margin-bottom: 3%;
+  min-width: 30vh;
+  color: rgb(49, 49, 49);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.social {
+  margin-left: 55%;
+  margin-top: 2vh;
+  min-width: 30vh;
+  max-width: 30vh;
+  color: rgb(0, 0, 0);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+
+#social_link {
+  width: 6rem;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 1000;
+  color: rgb(87, 87, 87);
+}
+
+.contact {
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 5vh;
+  min-width: 40vh;
+  max-width: 40vh;
+  color: rgb(0, 0, 0);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  letter-spacing: 1px;
 }
