@@ -18,7 +18,7 @@ html {
       rgba(0, 0, 0, 0.22),
       rgba(0, 0, 0, 0.22)
     ),
-    url('/resources/images/stevenuniverse_bg.jpg');
+    url('./resources/images/stevenuniverse_bg.jpg');
   background-position: 50%, 50%;
   background-size: auto, cover;
 }
